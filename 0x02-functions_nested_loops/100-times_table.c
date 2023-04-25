@@ -22,6 +22,7 @@ void print_times_table(int n)
 			else
 			{
 				int res = i * j;
+
 				_putchar(',');
 				_putchar(' ');
 
