@@ -1,23 +1,28 @@
 #include <stdio.h>
 
-/**
- * main - Entry point
- *
- * Return: Always 0 (Success)
- */
-int main(void)
-{
-    int i;
-    long int prev = 1, curr = 2, next = 0, sum = 0;
+int main() {
+    int a = 0, b = 1, c, n, i;
 
-    for (i = 1; i <= 33; i++)
-    {
-        if (curr % 2 == 0)
-            sum += curr;
-        next = prev + curr;
-        prev = curr;
-        curr = next;
+    printf("Enter the number of terms: ");
+    scanf("%d", &n);
+
+    printf("Fibonacci Series: ");
+
+    for (i = 1; i <= n; ++i) {
+        printf("%d, ", a);
+        if (i == 1) {
+            continue;
+        }
+        else if (i == 2) {
+            c = 1;
+        }
+        else {
+            c = a + b;
+            a = b;
+            b = c;
+        }
     }
-    printf("%ld\n", sum);
-    return (0);
+
+    return 0;
 }
+
