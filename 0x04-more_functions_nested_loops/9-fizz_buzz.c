@@ -1,9 +1,9 @@
 #include <stdio.h>
+
 /**
- * main - Prints the numbers from 1 to 100, but for multiples of three, "Fizz" is printed instead of the number 
- * and for multiples of five "Buzz" is printed, and for multiples of both three and five "FizzBuzz" is printed. 
- * Each number/word is separated by a space.
- * Return: Always 0.
+ * main - Entry point
+ *
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
@@ -23,5 +23,5 @@ int main(void)
 
     printf("\n");
 
-    return 0;
+    return (0);
 }
