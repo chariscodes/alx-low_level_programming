@@ -1,20 +1,25 @@
 #include "main.h"
 
 /**
- * puts2 - prints one character out of two
+ * puts_half - prints half of a string
  * @str : input
- * Return: print
  */
-void puts2(char *str)
+void puts_half(char *str)
 {
-	int i = 0;
+	int len = 0;
 
-	for (; str[i] != '\0'; i++)
+	while (*str != '\0')
 	{
-		if ((i % 2) == 0)
-			_putchar(str[i]);
-		else
-			continue;
+		len++;
+		str++;
 	}
+
+	str -= (len / 2);
+	while (*str != '\0')
+	{
+		_putchar (*str);
+		str++;
+	}
+
 	_putchar('\n');
 }
